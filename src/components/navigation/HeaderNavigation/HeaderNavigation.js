@@ -5,11 +5,11 @@ import Icon from 'react-native-vector-icons/FontAwesome5';
 
 
 //ESTILOS REUTILIZABLES
-import { background } from '../../../styles/colors';
+import colors from '../../../styles/colors';
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: background,
+    backgroundColor: colors.colorPrimary,
     height: 65,
     flexDirection: 'row',
     alignItems: 'center',
@@ -18,10 +18,10 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
-    color: '#fff'
+    color: colors.colorWhite
   },
   iconBar: {
-    color: '#fff',
+    color: colors.colorWhite,
     fontSize: 25
   }
 });

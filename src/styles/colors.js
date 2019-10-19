@@ -1,1 +1,5 @@
-export const background = '#0E134F';
+export default {
+  colorPrimary: '#0E134F',
+  colorWhite: '#fff',
+  colorSecondary: '#FEB155'
+}
