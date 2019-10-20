@@ -5,7 +5,7 @@ import Colors from '../../../styles/colors';
 export default StyleSheet.create({
   header: {
     backgroundColor: Colors.colorPrimary,
-    height: 65,
+    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -17,6 +17,6 @@ export default StyleSheet.create({
   },
   iconBar: {
     color: Colors.colorWhite,
-    fontSize: 25
+    fontSize: 26,
   }
 });

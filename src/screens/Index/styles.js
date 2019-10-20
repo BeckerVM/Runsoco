@@ -6,33 +6,31 @@ import Buttons from '../../styles/buttons';
 export default  StyleSheet.create({
   screen: {
     backgroundColor: Colors.colorPrimary,
-    paddingBottom: 50,
     display: 'flex',
     alignItems: 'center',
+    flex: 1,
+    justifyContent: 'space-between',
+    paddingBottom: 20
   },
   image: {
-    width: 350,
-    height: 220,
-    marginTop: 30
+    width: 250,
+    height: 200,
   },
   containerText: {
-    marginTop: 40
   },
   text: {
     color: Colors.colorWhite,
     textAlign: 'center',
-  
   },
   primaryText: {
-    fontSize: 22,
-    marginBottom: 20
+    fontSize:  18,
+    marginBottom: 10
   },
   secondaryText: {
-    fontSize: 18,
+    fontSize: 14,
     paddingHorizontal: 55
   },
   containerBtn: {
-    marginTop: 80
   },
   btn: {
     ...Buttons.btnLarge,

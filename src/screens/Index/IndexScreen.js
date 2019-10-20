@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 
 //COMPONENTES
 import HeaderNavigation from '../../components/navigation/HeaderNavigation/HeaderNavigation';
@@ -17,7 +17,7 @@ class IndexScreen extends React.Component {
   render() {
 
     return (
-      <ScrollView>
+      <>
         <HeaderNavigation />
         <View style={styles.screen}>
           <Image
@@ -34,7 +34,7 @@ class IndexScreen extends React.Component {
             </TouchableOpacity>
           </View>
         </View>
-      </ScrollView>
+      </>
     );
   }
 }
