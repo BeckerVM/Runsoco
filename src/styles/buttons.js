@@ -1,8 +1,10 @@
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
+
 const buttons = {
   btnLarge: {
-    paddingHorizontal: 70,
-    paddingVertical: 12,
-    borderRadius: 8,
+    paddingHorizontal: wp('15%'),
+    paddingVertical: wp('3%'),
+    borderRadius: wp('2%'),
   }
 }
 

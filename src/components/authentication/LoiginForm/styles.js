@@ -1,34 +1,37 @@
 import { StyleSheet } from 'react-native';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
-import Colors from '../../../styles/colors';
-import Buttons from '../../../styles/buttons';
+
+import Colors from '../../../styles/Colors';
+import Buttons from '../../../styles/Buttons';
+
 
 export default StyleSheet.create({
   form: {
     backgroundColor: Colors.colorWhite,
-    borderRadius: 5,
-    paddingHorizontal: 20,
-    paddingVertical: 10
+    borderRadius: wp('2%'),
+    paddingHorizontal: wp('5%'),
+    paddingVertical: wp('2.5%')
   },
   textForm: {
     textAlign: 'center',
-    fontSize: 18,
+    fontSize: hp('3%'),
     fontWeight: '900'
   },
   containerIcons: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 8
+    marginTop: wp('5%')
   },
   btnIcons: {
     borderWidth: 1,
     borderColor: '#f1f1f1',
-    borderRadius: 5,
-    paddingHorizontal: 15,
-    paddingVertical: 5
+    borderRadius: wp('2%'),
+    paddingHorizontal: wp('4.5%'),
+    paddingVertical: wp('2%')
   },
   icons: {
-    fontSize: 20,
+    fontSize: hp('3.5%'),
   },
   iconF: {
     color: 'navy'
@@ -37,17 +40,18 @@ export default StyleSheet.create({
     color: 'red'
   },
   containerInputs: {
-    marginTop: 20
+    marginTop: wp('5%')
   },
   input: {
     borderWidth: 1,
     borderColor: '#f1f1f1',
-    padding: 1,
-    borderRadius: 5,
-    paddingHorizontal: 10,
+    padding: wp('1%'),
+    borderRadius: wp('2%'),
+    paddingHorizontal: wp('3%'),
+    fontSize: hp('2.3%')
   },
   containerBtn: {
-    marginTop: 20,
+    marginTop: wp('10%'),
     alignItems: 'center'
   },
   btn: {
@@ -56,6 +60,7 @@ export default StyleSheet.create({
   },
   btnText: {
     color: Colors.colorWhite,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: hp('2.5%')
   }
 });
