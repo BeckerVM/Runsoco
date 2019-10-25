@@ -4,6 +4,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 
 import Colors from '../../../styles/Colors';
 
+
 export default StyleSheet.create({
   header: {
     backgroundColor: Colors.colorPrimary,
