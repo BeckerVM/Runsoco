@@ -6,17 +6,16 @@ import { createDrawerNavigator } from 'react-navigation-drawer';
 //PANTALLAS
 import IndexScreen from './src/screens/Index/IndexScreen';
 import LoginScreen from './src/screens/Login/LoginScreen';
-import BusinessScreen from './src/screens/Business/BusinessScreen';
-import DealDetailScreen from './src/screens/DealDetail/DealDetailScreen';
+import BussinesScreen from './src/screens/Bussines/BussinesScreen';
 import TestScreen from './src/screens/TestScreen';
+
 
 
 const DrawerNavigator = createDrawerNavigator({
   Index: IndexScreen,
   Test: TestScreen,
   Login: LoginScreen,
-  Business: BusinessScreen,
-  DealDetail: DealDetailScreen
+  Bussines: BussinesScreen
 }, {
   hideStatusBar: false
 });

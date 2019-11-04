@@ -1,29 +1,41 @@
 import { StyleSheet } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 
-
 import Colors from '../../../styles/Colors';
-
 
 export default StyleSheet.create({
   header: {
+    height: hp(9.6),
     backgroundColor: Colors.colorPrimary,
-    height: hp('9%'),
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: wp('5%'),
+    alignItems: 'center',
+    paddingLeft: wp(7)
   },
   title: {
-    fontSize: hp('3.2%'),
-    color: Colors.colorWhite
-  },
-  iconBar: {
+    fontSize: hp(3),
+    fontStyle: 'italic',
     color: Colors.colorWhite,
-    fontSize: hp('3.5%'),
-    width: wp('8%'),
-    height: hp('5%'),
-    textAlign: 'center',
-    paddingTop: wp('1%'),
+    fontWeight: 'bold'
+  },
+  containerIcon: {
+    alignSelf: 'stretch',
+    justifyContent: 'center',
+    paddingHorizontal: wp(5),
+  },
+  icon: {
+    color: Colors.colorWhite,
+    fontSize: hp(4)
+  },
+  containerTitle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginLeft: wp(10)
+  },
+  imgLogo: {
+    width: wp(11),
+    height: wp(11),
+    marginRight: wp(-2),
+    marginTop: hp(-2),
   }
 });

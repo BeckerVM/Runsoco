@@ -1,9 +1,9 @@
 const colors =  {
-  colorPrimary: '#0E134F',
+  colorPrimary: '#22B56E',
+  colorSecondary: '#1B5050',
   colorWhite: '#fff',
-  colorSecondary: '#FEB155',
   colorGray1: '#f1f1f1',
-  colorGray2: '#707070'
+  colorBlue1: '#D6DDF5'
 }
 
 export default colors;

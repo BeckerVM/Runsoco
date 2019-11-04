@@ -1,27 +1,32 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { withNavigation } from 'react-navigation';
-import Icon from 'react-native-vector-icons/FontAwesome5';
-
+import Icon from 'react-native-vector-icons/Entypo';
 
 //ESTILOS
 import styles from './styles';
-
 
 const HeaderNavigation = ({ navigation }) => {
   return (
    <View style={styles.header}>
      <Text></Text>
-     <Text style={styles.title}>RUNSOCO</Text>
-     <TouchableOpacity
+     <View style={styles.containerTitle}>
+        <Image
+          source={require('../../../assets/images/logo.png')}
+          resizeMode="contain"
+          style={styles.imgLogo}
+        />
+        <Text style={styles.title}>unsoco</Text>
+      </View>
+     <TouchableOpacity 
+      style={styles.containerIcon}
       onPress={() => navigation.openDrawer()}
      >
-       <Icon 
-        name="bars" 
-        style={styles.iconBar}
-      />
+       <Icon
+        style={styles.icon}
+        name="menu"
+       />
      </TouchableOpacity>
-     
    </View>
   );
 }
