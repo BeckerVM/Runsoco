@@ -7,10 +7,11 @@ export default StyleSheet.create({
   screen: {
     backgroundColor: Colors.colorPrimary,
     height: hp(91.4),
+    paddingHorizontal: wp(2)
   },
-  image: {
-    width: wp('70%'),
-    height: hp('35%'),
+  img: {
+    width: wp('80%'),
+    height: hp('45%'),
     resizeMode: 'contain',
     alignSelf: 'center'
   }

@@ -18,8 +18,11 @@ const BussinesItem = () => {
           <Text style={styles.title}>Gustitos del cura</Text>
           <Text style={styles.date}>10:00 a.m a 9:00 p.m</Text>
         </View>
-        <TouchableOpacity>
-          <Text>ICON</Text>
+        <TouchableOpacity style={styles.containerIcon}>
+          <Icon
+            style={styles.icon} 
+            name="random"
+          />
         </TouchableOpacity>
       </View>
     </View>

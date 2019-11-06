@@ -20,6 +20,10 @@ class LoginScreen extends React.Component {
         <HeaderNavigation />
         <View style={styles.screen}>
           <LoginForm />
+          <Image
+            style={styles.img} 
+            source={require('../../assets/images/image-login.png')}
+          />
         </View>
       </>
     );
