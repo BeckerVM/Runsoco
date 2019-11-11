@@ -9,10 +9,10 @@ const FooterNavigation = () => {
     <View style={styles.footer}>
       <TouchableOpacity style={styles.item}>
         <Icon 
-          style={styles.icon}
+          style={[styles.icon, styles.iconActive]} 
           name="utensils"
         />
-        <Text style={styles.iconText}>Comidas</Text>
+        <Text style={[styles.iconText, styles.iconActive]}>Comidas</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.item}>
         <Icon 
@@ -23,10 +23,10 @@ const FooterNavigation = () => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.item}>
         <Icon
-          style={[styles.icon, styles.iconActive]} 
+          style={styles.icon}
           name="id-badge"
         />
-        <Text style={[styles.iconText, styles.iconActive]}>Contactos</Text>
+        <Text style={styles.iconText}>Contactos</Text>
       </TouchableOpacity>
     </View>
   );

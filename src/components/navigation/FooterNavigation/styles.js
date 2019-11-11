@@ -26,7 +26,7 @@ export default StyleSheet.create({
     color: Colors.colorGray2
   },
   iconActive: {
-    color: Colors.colorSecondary
+    color: Colors.colorPrimary
   },
   iconText: {
     fontSize: hp('2.2%')
